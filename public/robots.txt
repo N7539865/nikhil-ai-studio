@@ -1,0 +1,5 @@
+﻿# robots.txt for Nikhil AI Studio
+User-agent: *
+Allow: /
+
+Sitemap: https://nikhil-ai-studio.vercel.app/sitemap.xml

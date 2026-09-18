@@ -1,0 +1,61 @@
+﻿{
+  "name": "Nikhil AI Studio - Autonomous Creative Suite",
+  "short_name": "Nikhil AI",
+  "description": "Next-generation autonomous AI content creation studio with Video Generator, Auto-Pilot, and Real-time Analytics.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#090d16",
+  "theme_color": "#8b5cf6",
+  "orientation": "any",
+  "categories": ["productivity", "utilities", "photo", "entertainment"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AI Video Studio",
+      "short_name": "Video Studio",
+      "description": "Generate dynamic AI video scenes from text & images",
+      "url": "/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Auto-Pilot Agent",
+      "short_name": "Auto-Pilot",
+      "description": "Run autonomous content generation loops",
+      "url": "/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

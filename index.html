@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#090d16" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Nikhil AI" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512.png" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Primary SEO Metadata -->
+    <title>Nikhil AI Studio — AI Content Auto-Pilot & Creator Command Center</title>
+    <meta name="title" content="Nikhil AI Studio — AI Content Auto-Pilot & Creator Command Center" />
+    <meta name="description" content="Autonomous AI content creation pipeline for modern creators. Generate high-retention video ideas, complete scripts, high-CTR titles, captions, hashtags, and automated schedules for Instagram Reels and YouTube Shorts." />
+    <meta name="keywords" content="Nikhil Arts, Nikhil AI Studio, Content Auto-Pilot, Art Tutorials, Drawing Masterclass, Video Scripts, Creator Tools, YouTube Shorts, Instagram Reels, Sketching Tutorial" />
+    <meta name="author" content="Nikhil" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://nikhil-ai-studio.vercel.app/" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nikhil-ai-studio.vercel.app/" />
+    <meta property="og:title" content="Nikhil AI Studio — AI Content Auto-Pilot & Creator Command Center" />
+    <meta property="og:description" content="Autonomous AI content creation pipeline for modern creators. High-retention hooks, scripts, captions, and scheduling." />
+    <meta property="og:image" content="/nikhil.jpg" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nikhil-ai-studio.vercel.app/" />
+    <meta property="twitter:title" content="Nikhil AI Studio — AI Content Auto-Pilot" />
+    <meta property="twitter:description" content="Autonomous AI creator workspace: IDEA to SCRIPT to TITLE to CAPTION to SCHEDULE." />
+    <meta property="twitter:image" content="/nikhil.jpg" />
+
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-studio-950 text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => {
+              console.log('[PWA] Service Worker registered successfully, scope:', reg.scope);
+            })
+            .catch((err) => {
+              console.warn('[PWA] Service Worker registration failed:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

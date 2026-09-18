@@ -1,0 +1,10 @@
+﻿{
+  "appId": "com.nikhil.aistudio",
+  "appName": "Nikhil AI Studio",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://nikhil-studio-pro.surge.sh",
+    "cleartext": true
+  }
+}
