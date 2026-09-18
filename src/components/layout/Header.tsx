@@ -4,6 +4,7 @@ import { useStudio } from '../../context/StudioContext';
 import { Sun, Moon, Bot, Sparkles } from 'lucide-react';
 import { BrandSwitcher } from './BrandSwitcher';
 import { InstallAppButton } from '../common/InstallAppButton';
+import { GithubIcon } from '../common/BrandIcons';
 
 export const Header: React.FC = () => {
   const { theme, toggleTheme, activeTab, setActiveTab, activeBrand } = useStudio();
@@ -59,6 +60,17 @@ export const Header: React.FC = () => {
             <span>AI Copilot</span>
           </button>
         )}
+
+        {/* GitHub Creator Link */}
+        <a
+          href={`https://github.com/${(activeBrand.handleGithub || 'N7539865').replace(/^@/, '')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 rounded-xl bg-studio-900 border border-slate-800 text-slate-400 hover:text-white hover:border-purple-500/40 transition-colors flex items-center justify-center"
+          title={`GitHub: @${(activeBrand.handleGithub || 'N7539865').replace(/^@/, '')}`}
+        >
+          <GithubIcon className="w-4 h-4" />
+        </a>
 
         {/* Theme Toggle */}
         <button

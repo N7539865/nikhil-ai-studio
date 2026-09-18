@@ -3,6 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "author": "N7539865 (Nikhil)",
+  "homepage": "https://nikhil-studio-pro.surge.sh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/N7539865/nikhil-ai-studio.git"
+  },
   "scripts": {
     "dev": "concurrently -k \"node server/index.js\" \"vite\"",
     "client": "vite",

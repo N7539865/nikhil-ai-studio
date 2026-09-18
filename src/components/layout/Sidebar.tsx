@@ -127,7 +127,7 @@ export const Sidebar: React.FC = () => {
               {activeBrand.creatorName}
             </p>
             <p className="text-[10px] text-purple-400/90 truncate font-medium">
-              {activeBrand.handleInsta || '@nikhil.creates'}
+              {activeBrand.handleGithub ? `github/@${activeBrand.handleGithub.replace(/^@/, '')}` : (activeBrand.handleInsta || '@nikhil.creates')}
             </p>
           </div>
           <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-purple-500/20 text-purple-300 uppercase tracking-wider">
